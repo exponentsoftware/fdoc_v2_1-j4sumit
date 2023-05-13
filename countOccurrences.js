@@ -16,3 +16,4 @@ return count;
 
 const arr = [4, 2, 6, 8, 4, 1, 4];
 console.log(countOccurrences(arr, 4));
+
