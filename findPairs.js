@@ -18,12 +18,8 @@ for(let i=0; i<arr.length; i++)
      newarr.push(subarr);
      subarr=[];
         }
-            }
-
-    
+     }   
 }
-// console.log(subarr);
-
 return newarr;
 }
 const arr = [3, 4, 6, 8, 1, 2, 9];
