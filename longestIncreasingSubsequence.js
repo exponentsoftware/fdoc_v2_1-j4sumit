@@ -20,3 +20,4 @@ newarr.push(arr[j]);
 
 const arr = [1, 4, 2, 5, 3];
 console.log(longestIncreasingSubsequence(arr));
+//output - [ 1, 4, 5 ]
