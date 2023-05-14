@@ -18,6 +18,6 @@ newarr.push(arr[j]);
     return newarr;
 }
 
-const arr = [1, 4, 2, 5, 3];
+const arr = [1,3,2,4,5,7]; //1,3,2,4,5,7-13457
 console.log(longestIncreasingSubsequence(arr));
 //output - [ 1, 4, 5 ]
