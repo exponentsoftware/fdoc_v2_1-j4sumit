@@ -7,16 +7,20 @@
 
 function filterByLength(arr, num)
 {
-    let newarr=[];
-for( let str of arr)
-{
+//     let newarr=[];
+// for( let str of arr)
+// {
     
-    if(str.length>= num)
-    {
-        newarr.push(str);
-    }
-}
-return newarr;
+//     if(str.length>= num)
+//     {
+//         newarr.push(str);
+//     }
+// }
+
+let c= arr.filter((str)=> str.length>=num);
+
+return c;
+
 }
 const arr = ["apple", "banana", "cherry", "date", "elderberry"];
 console.log(filterByLength(arr, 6));
