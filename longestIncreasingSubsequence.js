@@ -3,21 +3,19 @@
 // const arr = [1, 4, 2, 5, 3];
 // console.log(longestIncreasingSubsequence(arr));
 
-function longestIncreasingSubsequence(arr)
-{
-    let newarr=[];
-    for(let j=0; j<arr.length;j++)
-    {
-        if(j==0)
-        {
+function longestIncreasingSubsequence(arr) {
+    let newarr = [];
+    let len=arr.length;
+    for (let j = 0; j < len; j++) {
+        if (j == 0) {
             newarr.push(arr[j]);
         }
-        if(arr[j]>arr[j-1])
-newarr.push(arr[j]);
+        if (arr[j] > arr[j - 1])
+            newarr.push(arr[j]);
     }
     return newarr;
 }
 
-const arr = [1,3,2,4,5,7]; //1,3,2,4,5,7-13457
+const arr = [1, 3, 2, 4, 5, 7]; //1,3,2,4,5,7-13457
 console.log(longestIncreasingSubsequence(arr));
-//output - [ 1, 4, 5 ]
+//arr = [1, 4, 2, 5, 3]; -output - [ 1, 4, 5 ]

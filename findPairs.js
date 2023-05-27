@@ -7,16 +7,16 @@
 function findPairs(arr, num)
 {
 let newarr=[];
-let subarr=[];
+
 for(let i=0; i<arr.length; i++)
 {
      for(j=i+1; j<arr.length; j++)
     {
         if(arr[i] + arr[j] === num)
         {
-     subarr.push(arr[i],arr[j]);
-     newarr.push(subarr);
-     subarr=[];
+
+     newarr.push([arr[i],arr[j]])
+
         }
      }   
 }
