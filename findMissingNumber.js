@@ -3,13 +3,33 @@
 // const arr = [1, 2, 3, 5, 6, 7, 8, 9,10];
 // console.log(findMissingNumber(arr));
 
+// function findMissingNumber(arr)
+// {
+ 
+//     let newarr=[];
+// for(let i=1; i<=arr.length+1; i++)
+// {
+// if(arr.includes(i)== false)
+// { 
+//     newarr.push(i);
+// }
+// }
+// return newarr;
+// }
+
+// const arr = [1, 2, 3, 5, 6 , 9, 10];
+// console.log(findMissingNumber(arr));
+
+// by using sorting;
+
 function findMissingNumber(arr)
 {
- 
+    let maxele = Math.max(...arr);
+    const sortedarr= new Set(arr);    
     let newarr=[];
-for(let i=1; i<=arr.length+1; i++)
+for(let i=1; i<=maxele; i++)
 {
-if(arr.includes(i)== false)
+if(!sortedarr.has(i))
 { 
     newarr.push(i);
 }
@@ -17,5 +37,5 @@ if(arr.includes(i)== false)
 return newarr;
 }
 
-const arr = [1, 2, 3, 5, 6 , 9, 10];
+const arr = [1, 2,18, 3, 5,12, 6 , 9, 10];
 console.log(findMissingNumber(arr));
